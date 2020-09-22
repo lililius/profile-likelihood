@@ -1,4 +1,4 @@
-nrep=100#ÖØ¸´´ÎÊı
+nrep=100
 n=100
 mu=2
 betapl=rep(0,nrep)
