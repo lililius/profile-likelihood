@@ -28,7 +28,7 @@ print(c(h1,h2,beta))
 h3=density(Y)$bw
 for(i in 1:n){
    W=kern((Y[-i]-Y[i])/h2)
-   #the kernel estimator of E(¦ÂX|y)
+   #the kernel estimator of E(betaX|y)
    fy[i]=sum(beta*X[-i]*W)/sum(kern((Y[-i]-Y[i])/h2)) 
    Ehat=function(x){
       s1=sum(kern((beta*X-x)/h1)*Y)	
